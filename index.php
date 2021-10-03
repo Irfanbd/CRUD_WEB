@@ -4,7 +4,7 @@ include 'header.php';
 <div id="main-content">
     <h2>All Records We Have</h2>
     <?php
-    $conn = mysqli_connect("localhost","root","","crud")
+    $conn = mysqli_connect("localhost","root","","crud") or die("Connection Failed");
     ?>
     <table cellpadding="7px">
         <thead>
