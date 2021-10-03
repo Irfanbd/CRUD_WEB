@@ -31,7 +31,7 @@ include 'header.php';
                 <td><?php echo $row['sid'];?></td>
                 <td><?php echo $row['sname'];?></td>
                 <td><?php echo $row['saddress'];?></td>
-                <td><?php echo $row['sclass'];?></td>
+                <td><?php echo $row['cname'];?></td>
                 <td><?php echo $row['sphone'];?></td>
                 <td>
                     <a href="edit.php">EDIT</a>
