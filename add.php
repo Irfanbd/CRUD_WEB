@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <label>Class</label>
-            <select name="class">
+            <select name="sclass">
                 <option value="" selected disabled>Select Class</option>
                 <?php
                 $conn = mysqli_connect("localhost","root","","crud") or die("Connection Failed");
@@ -28,8 +28,6 @@
             while($row =mysqli_fetch_assoc($result))
             {
 
-
-           
                 ?>
                 <option value="<?php  echo $row['cid']; ?>"><?php  echo $row['cname']; ?></option>
                 <?php
