@@ -1,6 +1,9 @@
 <?php include 'header.php'; ?>
 <div id="main-content">
     <h2>Add New Record</h2>
+    <?php
+    $conn = mysqli_connect("localhost","root","","crud")
+    ?>
     <form class="post-form" action="savedata.php" method="post">
         <div class="form-group">
             <label>Name</label>
