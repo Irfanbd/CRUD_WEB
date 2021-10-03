@@ -40,7 +40,7 @@ include 'header.php';
 
             </tr>
 <?php
-}
+ }
 ?>
         </tbody>
     
