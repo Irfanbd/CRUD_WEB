@@ -1,7 +1,10 @@
+
 <?php
 include 'header.php';
 ?>
+
 <div id="main-content">
+    
     <h2>All Records We Have</h2>
     <?php
 include'config.php';
