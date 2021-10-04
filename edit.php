@@ -29,12 +29,25 @@ while($row=mysqli_fetch_assoc($result))
       </div>
       <div class="form-group">
           <label>Class</label>
-          <select name="sclass">
-              <option value="" selected disabled>Select Class</option>
-              <option value="1">BCA</option>
-              <option value="2">BSC</option>
-              <option value="3">B.TECH</option>
-          </select>
+
+          <?php
+          $sql1="SELECT * FROM studentclass";
+
+          $result1 = mysqli_query($conn,$sql1) or die("Unsuccessful Query");
+ if(mysqli_num_rows($result1)>0) 
+ {
+     echo'<select name="sclass">
+     <option value="" selected disabled>Select Class</option>'
+while($row1=mysqli_fetch_assoc($result1))
+{
+
+
+
+          
+        
+          echo'</select>'
+}
+          ?>
       </div>
       <div class="form-group">
           <label>Phone</label>
