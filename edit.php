@@ -2,6 +2,14 @@
 
 <div id="main-content">
     <h2>Update Record</h2>
+<?php
+$conn = mysqli_connect("localhost","root","","crud") or die("Connection Failed");
+
+$sql = "SELECT * FROM studentclass ";
+
+$result = mysqli_query($conn,$sql) or die("Unsuccessful Query");
+?>
+
     <form class="post-form" action="updatedata.php" method="post">
       <div class="form-group">
           <label>Name</label>

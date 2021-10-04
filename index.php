@@ -34,7 +34,7 @@ include 'header.php';
                 <td><?php echo $row['cname'];?></td>
                 <td><?php echo $row['sphone'];?></td>
                 <td>
-                    <a href="edit.php">EDIT</a>
+                    <a href="edit.php?id =<?php echo $row['sid'];?>">EDIT</a>
                     <a href="delete-inline.php">Delete</a>
                 </td>
 
