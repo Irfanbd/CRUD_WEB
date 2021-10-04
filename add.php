@@ -2,7 +2,7 @@
 <div id="main-content">
     <h2>Add New Record</h2>
     <?php
-$conn = mysqli_connect("localhost", "root", "", "crud")
+include'config.php';
 ?>
     <form class="post-form" action="savedata.php" method="post">
         <div class="form-group">
@@ -18,7 +18,7 @@ $conn = mysqli_connect("localhost", "root", "", "crud")
             <select name="sclass">
                 <option value="" selected disabled>Select Class</option>
                 <?php
-$conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
+include'config.php';
 $sql = "SELECT * FROM studentclass ";
 $result = mysqli_query($conn, $sql) or die("Unsuccessful Query");
 while ($row = mysqli_fetch_assoc($result)) {

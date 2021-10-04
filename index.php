@@ -4,7 +4,7 @@ include 'header.php';
 <div id="main-content">
     <h2>All Records We Have</h2>
     <?php
-$conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
+include'config.php';
 $sql = "SELECT * FROM student JOIN studentclass where student.sclass = studentclass.cid";
 $result = mysqli_query($conn, $sql) or die("Unsuccessful Query");
 if (mysqli_num_rows($result) > 0) {
@@ -32,7 +32,7 @@ if (mysqli_num_rows($result) > 0) {
                 <td><?php echo $row['sphone']; ?></td>
                 <td>
                     <a href='edit.php?id=<?php echo $row['sid']; ?>'>EDIT</a>
-                    <a href='delete-inline.php'>Delete</a>
+                    <a href='delete-inline.php?id=<?php echo $row['sid']; ?>'>Delete</a>
                 </td>
 
             </tr>
